@@ -4,6 +4,7 @@ import * as SQLite from 'expo-sqlite';
 
 const db = SQLite.openDatabase('todos.db');
 
+
 const TodoListScreen = ({ navigation }) => {
   const [todos, setTodos] = useState([]);
 

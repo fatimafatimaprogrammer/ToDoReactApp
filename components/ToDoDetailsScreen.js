@@ -8,6 +8,7 @@ const TodoDetailsScreen = ({ navigation, route }) => {
   const [task, setTask] = useState('');
   const { id } = route.params || {};
 
+  
   useEffect(() => {
     if (id) {
       db.transaction((tx) => {
